@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap');
+@import url("https://fonts.googleapis.com/css?family=Marvel:400,700");
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 110vh;
+}
+
+header{
+    z-index: 2;
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 50px;
+    padding: 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: 0.5s ease;
+    box-sizing: border-box;
+}
+
+header .logo{
+    position: relative;
+    width: 20%;
+    display: flex;
+    text-decoration:none;
+}
+
+header .logo img{
+    height: 50px;
+    width: auto;
+}
+
+header .logo span{
+    display: flex;
+    height: 50px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 70px;
+    transform: translateY(-50%);
+    flex-direction: row;
+}
+
+header .navigation{
+    position: relative;
+    padding: 10px;
+    padding-left: 0;
+    width: 80%;
+    text-align: right;
+}
+
+header .navigation a{
+    color: rgb(247, 9, 9);
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 15px; 
+    padding: 10px;   
+}
+
+header .navigation a:hover{
+    color: #fff;
+    background-color: #04f524;
+    border-radius: 1px;
+    animation: focus-menu-item .2s ;
+}
+
+@keyframes focus-menu-item{
+	0%{
+        padding: 5px;
+    }
+    100%{
+        padding: 10px;
+    }
+}
+
+header.sticky{
+    background: rgba(0, 0, 0, 0.3);
+    /*padding: 10px;*/
+    background-position: 0.2;
+}
+
+header.sticky .navigation a:hover{
+    color: #fff;
+}
+
+section{
+    padding: 30px 100px ;
+}
+/*------------ section-1 start  --------------------*/
+.home{
+	position: relative;
+	width: 100%;
+	height: 50%;
+	align-items: center;
+	display: fixed;
+    margin-top: 50px;
+	/*
+	display: flex;
+    background: url(images/madrasha_name.jpeg)no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fiexd;*/
+}
+
+.home .content{
+	max-width: 800px;
+}
+
+.home .content h2{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+    color: orangered;
+}
+
+.home .content h2 span{
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.btn{
+    color: #fff;
+    background-color: #235bf6;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: .05s ease;
+    background: #3a6cf4;
+}
+
+.btn:hover{
+    background-color: #f70606;
+}
+
+/* ################ section-1 end #################### */
+
+/*------------ Each section common Title start  --------------------*/
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+.section-title{
+    position: relative;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+/*
+.section-title:before{
+    content: '';
+    position: absolute;
+    top: 56px;
+    left: 10%;
+    width: 180px;
+    height: 4px;
+    background: #3a6cf4;
+    transform: translateX(-50%);
+}
+
+.section-title::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 50%;
+  /*  width: 15px;
+    height: 15px;
+    border-radius: 50%;*/
+/*    background: #3a6cf4;
+    transform: translateX(-50%);
+}
+*/
+
+/* ################ Each section common Title end #################### */
+
+
+/*------------ section-2 start  --------------------*/
+.about .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.about .content .col-left{
+    position: relative;
+    width: 60%;
+}
+
+
+.about .content .col-left .content-title{
+     font-size: 2em;
+     font-weight: 800; 
+ }
+ 
+ .about .content .col-left .paragraph-text{
+     font-size: .8em;
+ }
+
+.about .content .col-right{
+    position: relative;
+    width: 30%;
+    /*height: 100%;*/
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    padding: 10px;
+}
+
+.about .content .col-right .content-title{
+    /* font-size: 2em;
+     font-weight: 800; */
+     margin: 10px;
+     color: #f70606;
+     font-weight: 800;
+ }
+
+ .about .content .col-right .content-text{
+    font-size: 1em;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+.animated-text{
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.animated-text p{
+    color: #4e9eff;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 1px;    
+    color: #3a6cf4;
+}
+
+.animated-text p:nth-child(1){
+    animation: text-move 10s infinite;
+}
+
+@keyframes text-move{
+	0%{
+		margin-top: 0;
+	}
+	25%{
+		margin-top: -70px;
+	}
+	50%{
+		margin-top: -140px;
+	}
+	75%{
+		margin-top: -70px;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+
+ 
+/* ################ section-2 end #################### */
+/*------------ section-6 Start  --------------------*/
+.division{
+    background: snow;
+}
+
+.division .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.division .content .card{
+    width: 30%;
+    margin: 5px;   
+    position: relative; 
+    overflow: hidden;
+    background: snow;
+    border: none;
+}
+  
+  .division .card .info {   
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: teal;
+    position: relative;
+  }
+  .division .card .info:after {
+    content: "";
+   /* display: block;*/
+    width: 0px;
+    height: 0px;
+    background-color: skyblue;
+    top: 0px;
+    right: 0px;
+    border-bottom: 15px solid #006767;
+    border-left: 15px solid #006767;
+    border-right: 15px solid snow;  /* for top corner color  */
+    border-top: 15px solid snow;    /* for top corner color  */
+    position: absolute;
+    filter: drop-shadow(-5px 5px 3px rgba(0, 0, 0, 0.5));
+  }
+  .division .card .info:before {
+    content: "";
+   /* display: block;*/
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid #006767;
+    border-right: 20px solid #006767;
+    border-left: 20px solid snow;     /* for bottom corner color  */
+    border-bottom: 20px solid snow;   /* for bottom corner color  */
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    filter: drop-shadow(7px -7px 5px rgba(0, 0, 0, 0.5));
+  }
+  .division .card .info h3 {
+    color: #04f524;
+    width: 30%;
+    font-size: 1em;
+  }
+  .division .card .info p {
+    width: 70%;
+    color: snow;
+    font-size: .9rem;
+    padding-left: 2px;
+  }
+  .division .card .info .btn{
+      background: #3a6cf4;
+      height: 30px;
+      font-size: .7rem;
+      margin-top: 2px;
+      text-transform: none;
+  }
+  .division .card .info .btn:hover{
+    background-color: #f70606;
+}
+/* ################ section-6 End #################### */
+/*------------ section-4 Start  --------------------*/
+.administration .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 5px;
+    
+}
+
+.title p{
+    font-size: 1em;
+    width: 80%;
+}
+
+.administration .content .card{
+    background: #fff;
+    width: 280px;
+    margin: 10px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: inset 0 5px 10px 5px #999,inset 0px -5px  10px 5px #999;
+    border-radius: 10px;    
+    transition: 0.5s ;
+}
+
+.administration .content .card:hover{
+    z-index: 5;
+    transform: scale(1.1);    
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+}
+
+.administration .content .card .administration-icon{
+    color: #3a6cf4;
+    font-size: 4em;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.administration .content .card:hover .administration-icon{
+    transform: translateY(-10px);
+}
+
+.administration .content .card .info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+/* ################ section-4 End #################### */
+
+/*------------ section-5 Start  --------------------*/
+
+/* ################ section-5 End #################### */
+
+.donation .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.donation .content .col-left{
+    position: relative;
+    width: 45%;
+    padding: 20px;
+    justify-content: left;
+    margin-right: 0;
+}
+
+.donation .content .col-right{
+    position: relative;
+    width: 55%;
+    margin-left: 0;
+}
+
+.donation .content .col-right .content-title{    
+    margin-bottom: 20px;
+    color: red;
+    font-size: 1em;
+    font-weight: 400;
+    
+}
+
+.donation-form{
+    max-width: 600px;
+  /*  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 5px;*/
+}
+
+.donation-form h3{
+    color: #111;
+    font-size: 1.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.donation-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.donation-form .input-box input,
+.donation-form .input-box textarea,
+.donation-form .input-box select{
+    color: #111;
+    width: 100%;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #0616f7;
+    resize: none;
+    width: 50%;
+}
+
+.donation-form .input-box .send-btn{
+    color: #fff;
+    background: #0143f7;
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transform: 0.5s ease;
+    width: 50%;
+}
+
+.donation-form .input-box .send-btn:hover{
+    background: #0143f8;
+}
+/*############# End donation part ############*/
+
+/*------------ section-7 Start  --------------------*/
+.contact .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.contact .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact .content .row .card{
+    background: #fff;
+    width: 240px;
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;    
+}
+
+.contact .content .row .card .contact-icon{
+    color: #3a6cf4;
+    font-size: 4em;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.contact .content .row .card:hover .contact-icon{
+    transform: translateY(-10px);
+}
+
+.contact .content .row .card .info{
+    text-align: center;
+}
+
+.contact .content .row .card .info h3{
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.contact .content .row .card span{
+    color: #666;
+    font-weight: 500;
+}
+
+/* ################ section-7 End #################### */
+/*------------ section-4 Start  --------------------*/
+
+
+  
+/* ################ section-4 End #################### */
+/*------------ section-4 Start  --------------------*/
+.donation .content{
+    width: 100%;
+}
+
+.donation .col-left{
+    width: 50%;
+    background: red;
+    margin-right: 0;
+    padding-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.donation .content .container{
+    width: 50%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+/* Add padding to containers */
+.group-item {
+    padding: 16px;
+    background-color: white;
+  }
+
+/* Full-width input fields */
+input[type=text], select {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border: 2px red solid;
+    border-radius: 5px;
+  }
+  
+  input[type=text]:focus, select:focus {
+    background-color: #666;
+    outline: none;
+    color: #fff;
+    font-weight: 400;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .donate-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .donate-btn:hover {
+    opacity: 1;
+  }
+/* ################ section-4 End #################### */
+
+
+.footer{
+    background: #000016;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.footer .content{
+    display: flex;
+}
+
+.footer .content .footer-title{
+    font-size: 1em;
+    font-weight: 600;    
+    color: #fff;
+    width: 33%;
+    padding-left: 100px;
+}
+
+.footer .content .footer-title .madrasha-address{
+    font-size: .8em;
+    color: red;
+}
+
+.footer .content .media-icons{
+    width: 33%;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer .media-icons a{
+    color: #fff;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+.footer .copyright{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: .8em;
+}
+
+.footer .copyright a{
+    color: #3a6cf4;
+    text-decoration: none;
+}
+
+.footer .content .about-us{
+    width: 34%;
+    text-align: right;
+    align-items: right;
+    padding-right: 100px;
+}
+
+.reveal{
+	position: relative;
+	transform: translateY(50px);
+	opacity: 0;
+	transition: all 1.5s ease;
+}
+
+.reveal.active{
+	transform: translateY(0);
+	opacity: 1;
+}
