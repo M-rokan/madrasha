@@ -199,9 +199,6 @@ section{
 
 
 /*------------ section-2 start  --------------------*/
-.about{
-    margin-top: 0;
-}
 .about .content{
     position: relative;
     width: 100%;
@@ -579,6 +576,7 @@ section{
   
 /* ################ section-4 End #################### */
 /*------------ section-4 Start  --------------------*/
+/*
 .donation .content{
     width: 100%;
 }
@@ -603,54 +601,7 @@ section{
     padding: 16px;
     background-color: white;
   }
-
-/* Full-width input fields */
-input[type=text], select, label {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-    border: 2px red solid;
-    border-radius: 5px;
-  }
-  
-  input[type=text]:focus, select:focus {
-    background-color: #fbff02;
-    outline: none;
-    color: #000016;
-    font-weight: 600;
-  }
-  label{
-      background: #3a6cf4;
-      font-weight: 600;
-      border: none;
-      border-radius: 0;
-      color: #fff;
-  }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
-  }
-  
-  /* Set a style for the submit button */
-  .donate-btn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .donate-btn:hover {
-    opacity: 1;
-  }
+*/
 /* ################ section-4 End #################### */
 
 /*

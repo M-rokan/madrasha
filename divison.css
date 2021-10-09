@@ -269,7 +269,7 @@
     left: 25%;
     top: 25%;
     width: 50%; /* Full width */
-    height: 70%; /* Full height */
+    height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(202, 2, 252, 1);  /* Black w/ opacity */
@@ -291,3 +291,53 @@
     text-align: center;  
     margin-top: 10px; 
 }
+
+
+
+/* Full-width input fields */
+input[type=text], select, label {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border: 2px red solid;
+    border-radius: 5px;
+  }
+  
+  input[type=text]:focus, select:focus {
+    background-color: #fbff02;
+    outline: none;
+    color: #000016;
+    font-weight: 600;
+  }
+  label{
+      background: #3a6cf4;
+      font-weight: 600;
+      border: none;
+      border-radius: 0;
+      color: #fff;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .donate-btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .donate-btn:hover {
+    opacity: 1;
+  }
