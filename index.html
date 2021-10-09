@@ -3,39 +3,72 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title> Madrasha Umar (R) </title>
+    <title> Madrasha Umar (R) </title> 
     <link rel="stylesheet" href="style.css">  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="modal.css">  
+    <link rel="stylesheet" href="divison.css">  
+    <link rel="stylesheet" href="responsive-.css">  
+    <link rel="stylesheet" href="navbar-test-after-banner.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    -->
-  </head>
+  </head>  
   
   <body class="">
 
     <header>
-      <a  href="#" class="logo"><img src="images/logo.jpeg" alt=""><span>Madrasha Umar (R)</span></a>
-      <div class="navigation">
-        <a href="#home">শুরুর পাতা</a>
-        <a href="#about">পরিচিতি</a>
-        <a href="#division">বিভাগ সমূহ</a>
-        <a href="#donation">অনুদান</a>
-        <a href="#administration">প্রশাসনিক</a>
-        <a href="#online_class">অনলাইন ক্লাস</a>
-        <a href="#feedback">অন্যান্য</a>
-        <a href="#contact">যোগাযোগ</a>
+      <div class="banner" id="banner" >
+          <img src="images/banner.png" alt="no" class="banner-logo" id="banner-logo">
       </div>
-
+      <nav class="nav-bar" >        
+        <ul class="ul-1 ul-main-content">
+          <li class="p-item"><a href="#">Home</a></li>                
+          <li class="p-item"><a href="#">About</a></li>               
+          <li class="p-item"><a href="#">Donation</a></li>               
+          <li class="p-item dp-list"><a href="#">Academic</a>
+            <ul class="ul-2">
+              <li class="c-item"><a href="#">bangla</a></li>                
+              <li class="c-item"><a href="#">EnglishMath</a></li>               
+              <li class="c-item"><a href="#">D</a></li>               
+              <li class="c-item"><a href="#">A2</a>
+            </ul>
+          </li>                
+          <li class="p-item"><a href="#">Online Class</a></li>               
+          <li class="p-item dp-list"><a href="#">Q & A</a>
+            <ul class="ul-2">
+              <li class="c-item"><a href="#">H-2</a></li>                
+              <li class="c-item"><a href="#">A-2</a></li>               
+              <li class="c-item"><a href="#">D-2</a></li>               
+              <li class="c-item"><a href="#">A-2</a>
+            </ul>
+          </li>              
+          <li class="p-item"><a href="#">Contact</a></li>
+        </ul>   
+        <div class="dot-menu">          
+          <li class="p-btn"><input type="checkbox" id="dot-menu-btn" style="display: none;" onchange="dotMenu();"></li>
+          <li class="p-btn"><label for="dot-menu-btn" class="dot-menu-btn"> <i class="fas fa-bars"></i> </label></li>
+        </div> 
+        <div class="menu-icon">      
+          <ul class="ul-1">
+            <li class="i-item"><a href="#" ><i class="fa fa-youtube-play" style="color: red;"></i></a></li>
+            <li class="i-item"><a href="#"><i class="fas fa-envelope"></i></a></li>
+            <li class="i-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="i-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="i-item"><a href="#"><i class="fab fa-twitter"></i></a>  </li>  
+          </ul>
+        </div>  
+        </nav>
     </header>
 
-    <main>
+    <main>        
       <!------------- section-1 Home Start  -------------------->
-      <section id="home" class="home">
-                
+      <section id="home" class="home">                
         <!--carousel start hear-->
-        <div id="carouselExampleCaptions" class="carousel slide bgc border" data-bs-ride="carousel"  style="min-height:50px;">
+        <div id="carouselExampleCaptions" class="carousel slide bgc border" data-bs-ride="carousel"  style="min-height:40px;">
           <div class="carousel-indicators bgc">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -45,61 +78,46 @@
           </div>
           <div class="carousel-inner">
 
-            <div class="carousel-item active" style="min-height:40vh; max-height:55vh;">
-              
-                <!--div class="carouselInItemOne"></div-->
-
-                <!--text up and down start hear--
-                <div class="upDown mt-sm-2">
-                  <div class="animated-text">
-                        <h3>class nurani</h3>
-                      <h3> class najera </h3>
-                      <h3>class hefjo</h3>
-                  </div>
-                </div>
-                <!--text up and down end hear-->
+            <div class="carousel-item active" style="min-height:40vh; max-height:40vh;">
             <img src="images/madrasha_name.jpeg" class="carouselImagrOne d-block col-9 m-auto" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class=" bg-secondary d-inline p-2">মাদ্রাসা ওমর (রাঃ) আল-ইসলামিয়া</h3><br/><br>
-                <p class="bg-info text-dark d-inline p-3">মাদ্রাসার ব্যানার</p>
+                <h3 class=" bg-secondary d-inline p-2">First slide label</h3><br/><br>
+                <p class="bg-info text-dark d-inline p-3">Some representative placeholder content for the first slide.</p>
               </div>
             </div>
 
-
-            <div class="carousel-item" style="min-height:40vh;max-height:55vh;">
+            <div class="carousel-item" style="min-height:40vh;max-height:40vh;">
               <img src="images/inside_door.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h3  class=" bg-secondary d-inline p-2">মাদ্রাসা ওমর (রাঃ) আল-ইসলামিয়া</h3><br/><br>
-                <p class="bg-info text-dark d-inline p-3">মাদ্রাসার ব্যানার</p>
+                <h3  class=" bg-secondary d-inline p-2">Second slide label</h3><br/><br>
+                <p class="bg-info text-dark d-inline p-3">Some representative placeholder content for the second slide.</p>
               </div>
             </div>
 
-
-            <div class="carousel-item" style="min-height:40vh; max-height:55vh;">
+            <div class="carousel-item" style="min-height:40vh; max-height:40vh;">
               <img src="images/magazine.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class=" bg-secondary d-inline p-2">ম্যাগাজিন</h3> <br/><br>
-                <p class="bg-info text-dark d-inline p-3">ম্যাগাজিনের কভার পেজ</p>
+                <h3 class=" bg-secondary d-inline p-2">Third slide label</h3> <br/><br>
+                <p class="bg-info text-dark d-inline p-3">Some representative placeholder content for the third slide.</p>
               </div>
             </div>
 
-            <div class="carousel-item" style="min-height:40vh; max-height:55vh;">
+            <div class="carousel-item" style="min-height:40vh; max-height:40vh;">
               <img src="images/class_3.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class=" bg-secondary d-inline p-2">পরীক্ষার ছবি</h3> <br/><br>
-                <p class="bg-info text-dark d-inline p-3">মেয়াদি পরীক্ষা নেওয়ার একটি ছবি</p>
+                <h3 class=" bg-secondary d-inline p-2">fourth slide label</h3> <br/><br>
+                <p class="bg-info text-dark d-inline p-3">Some representative placeholder content for the fourth slide.</p>
               </div>
             </div>
 
-            <div class="carousel-item" style="min-height:40vh; max-height:55vh;">
+            <div class="carousel-item" style="min-height:40vh; max-height:40vh;">
               <img src="images/class_5.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
-                <h3 class=" bg-secondary d-inline p-2">ক্লাসের ছবি</h3> <br/><br>
-                <p class="bg-info text-dark d-inline p-3">মাদ্রাসার ক্লাসের ছবি</p>
+                <h3 class=" bg-secondary d-inline p-2">fifth slide label</h3> <br/><br>
+                <p class="bg-info text-dark d-inline p-3">Some representative placeholder content for the fifth slide.</p>
               </div>
             </div>
           </div>
-
 
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -114,20 +132,22 @@
         <!--carousel end hear-->        
       </section>
       <!-- ################ section-1 Home End #################### -->
+      <!-- ################ section-1 Home End #################### -->
       <!------------------ section-2 About Start  -------------------->
       <section class="about" id="about">
         <div class="headline" style="color: red;">
           <marquee width="100%" direction="left" height="100px">
-           মাদ্রাসা ওমর (রাঃ) একটি  দীনি শিক্ষা প্রতিষ্ঠান । অভিজ্ঞ শিক্ষক মন্ডলী ও পরিচালক দ্বারা প্রতিষ্ঠানটি পরিচালিত ও নিয়ন্ত্রিত । এছাড়াও প্রতিষ্ঠানটি আধুনিক ও বিজ্ঞান সম্মতভাবে কার্যক্রম করে থাকে । 
+            Madrasha Umar (R) akti adhonik o biggan sommotho Madrasha.
+            2021-22 saler jonno bortomane vorti cholche
           </marquee>                
         </div>
         <div class="content">
           
           <div class="column col-left  reveal">
-            <h2 class="content-title">এক নজরে মাদ্রাসা ওমর (রাঃ) আল-ইসলামিয়া</h2>
+            <h2 class="content-title">About Madrasha</h2>
             <p class="paragraph-text">১৫ যিলহজ ১৪২১ হিজরি, মোতাবেক ১৮ মার্চ ২০০১ ঈসায়িতে মাওলানা মুফতী মুহাম্মাদ নেয়ামতুল্লাহ সাহেব (প্রতিষ্ঠাতা ও সাবেক প্রিন্সিপাল : জামিয়া আশরাফুল উলূম করাচি,পাকিস্তান) মাদরাসাটি প্রতিষ্ঠা করেন। অতি ক্ষুদ্র পরিসর থেকে শুরু করে মাদরাসাটি বর্তমানে জামিয়া পর্যায়ে উন্নীত হয়েছে,আলহামদু লিল্লাহ।
               কুরআন-সুন্নাহভিত্তিক সমাজ গঠনের জন্য মুসলিম সন্তানদের দ্বীনি শিক্ষায় সুশিক্ষিত হওয়া যেমন প্রয়োজন, তেমনই প্রয়োজন পৃথিবীর প্রতিটি মানুষের কাছে কুরআন ও হাদীসের পয়গাম এবং ইলমে দ্বীনের সঠিক আদর্শ পৌঁছে দেওয়া। এজন্য দ্বীনি শিক্ষার পাশাপাশি যুগের চাহিদা পূরণে সাধারণ শিক্ষা অর্জনও অত্যন্ত গুরুত্বপূর্ণ হয়ে দাঁড়িয়েছে। এ সুমহান লক্ষ্য বাস্তবায়নের উদ্দেশ্যে জামিয়া সাহবানিয়ার প্রতিষ্ঠা,যেন সমাজের সর্বস্তরে যোগ্যতাসম্পন্ন এমন কিছু মুত্তাকি আলেমে দ্বীন তৈরি হয়,যারা ইখলাসের সাথে ইলমে দ্বীনের পথে নিজেরা চলবে,অন্যকে চালাবে এবং ইসলামের সঠিক আদর্শ রক্ষায় নিবেদিতপ্রাণ থাকবে। প্রতিষ্ঠানটি সঠিক দ্বীনি তা’লীম ও আখলাকি তারবিয়াতের মাধ্যমে আল্লাহওয়ালা তৈরির একটি রূহানি খানকা।</p>
-            <a href="javascript:void(0);" class="btn" ‍style="background:blue">আরও</a>
+            <a href="javascript:void(0);" class="btn">See More</a>
           </div>
           <div class="column col-right  reveal">
             <div class="content-title">
@@ -136,9 +156,9 @@
             <div class="content-text">
               <p>Here are show all update news and notice</p>
               <div class="animated-text">
-                <p>উন্নত পদ্ধতিতে পাঠ দান</p>
-                <p>অভিজ্ঞ শিক্ষক মন্ডলী</p>
-                <p>বিজ্ঞান সম্মত শিক্ষা ব্যবস্থা</p>
+                <p>Unnoto Poddhotite path dan </p>
+                <p>Obiggo Teacher</p>
+                <p>Biggan sommoto Shikkha bebosta</p>
               </div>
             </div>
           </div>
@@ -146,294 +166,208 @@
         </div>
       </section>
       <!-- ################ section-2 About End #################### -->
-            <!------------------ section-4 Division Start  -------------------->
-            <section class="division" id="division">
-              <div class="title reveal">
-                <h3 class="section-title">বিভাগ সমূহ</h3>
-              </div>
-              <div class="content">
-                <div class="card reveal">
-                  <div class="info">                    
-                    <h3>কিতাব বিভাগ</h3>
-                    <p>এ বিভাগ মোট ৫টি স্তরে বিভক্ত : ১. আলমারহাতুল ইবতিদাইয়্যাহ ২. আলমারহাতুল মুতাওয়াসসিতা ৩. আলমারহাতুস সানাবিয়া ৪. আলমারহালাতুল 'আলিয়া ৫. আলমারহালাতুল আলামিয়া
-                      <br><span><a href="javascript:void(0);" class="btn">আরও</a></span> 
-                    </p>                    
-                  </div>
-                </div>
-                <div class="card reveal">
-                  <div class="info">                    
-                    <h3>হিফজ বিভাগ</h3>
-                    <p>হিফয বিভাগের শিক্ষার্থীরা নাযেরা সমাপনীসহ মোট ৪ বছরে হিফয সম্পন্নের পাশাপাশি জেনারেল বিষয়ে ৪র্থ শ্রেণি শেষ করবে এবং ‘বেফাকুল মাদারিসিল আরাবিয়া বাংলাদেশের’ অধীনে হিফয পরীক্ষা দিবে। হিফযের জন্য বর্ণিত সিলেবাস বৎসর কৈন্দ্রিক নয়; বরং মেধার উপর নির্ভরশীল। তবে এ বিভাগের সর্বোচ্চ মেয়াদ ৪ বছর।
-                      <br><span><a href="javascript:void(0);" class="btn">আরও</a></span> 
-                    </p>
-                  </div>
-                </div>
-                <div class="card reveal">
-                  <div class="info">                    
-                    <h3>Titel Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil
-                      <br><span><a href="javascript:void(0);" class="btn">More</a></span> 
-                    </p>
-                  </div>
-                </div>
-                <div class="card reveal">
-                  <div class="info">                    
-                    <h3>Titel Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil
-                      <br><span><a href="javascript:void(0);" class="btn">More</a></span> 
-                    </p>
-                  </div>
-                </div>
-                <div class="card reveal">
-                  <div class="info">                    
-                    <h3>Titel Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil
-                      <br><span><a href="javascript:void(0);" class="btn">More</a></span> 
-                    </p>
-                  </div>
-                </div>
-                <div class="card reveal">
-                  <div class="info">                    
-                    <h3>Titel Lorem</h3>
-                    <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil
-                      <br><span><a href="javascript:void(0);" class="btn">More</a></span> 
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <!--
-            <section id="division_">
-              <div class="row_ reveal">
-                <div class="card_">
-                  <h2>Titel Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil</p>
-                </div>
-                <div class="card_">
-                  <h2>Titel Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet  Quos aliquid, possimus eum itaque accusamus nihil reprehenderit nesciunt excepturi quas sint.</p>
-                </div>
-                <div class="card_">
-                  <h2>Titel Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil reprehenderit nesciunt excepturi quas sint.</p>
-                </div>
-                <div class="card_">
-                  <h2>Titel Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet  Quos aliquid, possimus eum itaque accusamus nihil reprehenderit nesciunt excepturi quas sint.</p>
-                </div>
-                <div class="card_">
-                  <h2>Titel Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet Quos aliquid, possimus eum itaque accusamus nihil reprehenderit nesciunt excepturi quas sint.</p>
-                </div>
-                <div class="card_">
-                  <h2>Titel Lorem</h2>
-                  <p>Lorem ipsum dolor sit amet  Quos aliquid, possimus eum itaque accusamus nihil reprehenderit nesciunt excepturi quas sint.</p>
-                </div>
-              </div>
-            </section>
-            -->
-            <!--
-            <section class="division" id="division">
-              <div class="title reveal">
-                <h2 class="section-title">Division</h2>
-              </div>
-              <div class="content">
-                <!--teacher-1st --
-                <div class="card reveal">
-                  <div class="card-img">
-                    <img src="images/class_1.jpg" alt="">
-                  </div>
-                </div>
-                <!--teacher-2nd --
-                <div class="card reveal">
-                  <div class="card-img">
-                    <img src="images/class_2.jpg" alt="">
-                  </div>
-                </div>
-                <!--teacher-3rd --
-                <div class="card reveal">
-                  <div class="card-img">
-                    <img src="images/class_3.jpg" alt="">
-                  </div>
-                </div>
-                <!--teacher-4th --
-                <div class="card reveal">
-                  <div class="card-img">
-                    <img src="images/class_4.jpg" alt="">
-                  </div>
-                </div>
-                <div class="title reveal">
-                  <a href="#" class="btn">See All</a>
-                </div>
-              </div>
-            </section>
-          -->
-            <!-- ################ section-4 Division End #################### -->
-      <!------------------ section-5 Administration Start  -------------------->
-      <section class="administration" id="administration">
-        <div class="title  reveal">
-          <h2 class="section-title">পরিচালক ও শিক্ষক মন্ডলী</h2>
-        <!--  <p class="paragraph-text">Write any thinks associate division</p> -->
-        </div>
-        <div class="content">
-          <!-- 1st card -->
-          <div class="card  reveal">
-            <div class="administration-icon">              
-              <!--<i class="fas fa-book"></i>-->
-              <img src="images/images_1.jpg" alt="No pic" style="width: 180px; height: 150px;">
-            </div>
-            <div class="info">
-              <h3>মোঃ জাকির হোসেন</h3>
-              <p class="paragraph-text">পদবীঃ শিক্ষক, হিফজ বিভাগ</p>
-            </div>
-          </div>
-          <!-- 2nd card -->
-          <div class="card  reveal">
-            <div class="administration-icon">              
-              <!--<i class="fas fa-book"></i>-->
-              <img src="images/images_2.jpg" alt="No pic" style="width: 180px; height: 150px;">
-            </div>
-            <div class="info">
-              <h3>মোঃ আনাস</h3>
-              <p class="paragraph-text">সহকারী শিক্ষক, কিতাব বিভাগ</p>
-            </div>
-          </div>
-          <!-- 3rd card -->
-          <div class="card reveal">
-            <div class="administration-icon">
-              <!--<i class="fas fa-book"></i>-->
-              <img src="images/logo.jpeg" alt="No pic" style="width: 50px; height: 50px;">
-            </div>
-            <div class="info">
-              <h3>Hifz</h3>
-              <p class="paragraph-text">Write here about Hifz, and full details.......Write here about Hifz, and full details</p>
-            </div>
-          </div>
-          <!-- 4th card -->
-          <div class="card  reveal">
-            <div class="administration-icon">
-              <i class="fas fa-book"></i>
-            </div>
-            <div class="info">
-              <h3>Hifz</h3>
-              <p class="paragraph-text">Write here about Hifz, and full details.......Write here about Hifz, and full details</p>
-            </div>
-          </div>
-          <!-- 5th card -->
-          <div class="card  reveal">
-            <div class="administration-icon">
-              <i class="fas fa-book"></i>
-            </div>
-            <div class="info">
-              <h3>Hifz</h3>
-              <p class="paragraph-text">Write here about Hifz, and full details.......Write here about Hifz, and full details</p>
-            </div>
-          </div>
-          <!-- 6th card -->
-          <div class="card  reveal">
-            <div class="administration-icon">
-              <i class="fas fa-book"></i>
-            </div>
-            <div class="info">
-              <h3>Hifz</h3>
-              <p class="paragraph-text">Write here about Hifz, and full details.......Write here about Hifz, and full details</p>
-            </div>
-          </div>
-          <!--end card part-->
-        </div>
-      </section>
-      <!-- ################ section-5 Administration End #################### -->
-      <!------------------ section-6 Donation Start  -------------------->
-      <section class="donation" id="donation">
-        <div class="title reveal">
-          <h3 class="section-title">অনুদান</h3>
-        </div>
-        <div class="content reveal">          
-        <div class="col-left">
-          <p>Danation Content</p>
-        </div>
-          <div class="container">
-            <form action="/">
-              <div class="group-item">
-                <p>নাম, ফোন বা ইমেইল পূরণ করতে না চাইলে ফাকা রাথতে হবে</p>
-                <hr>
-                
-                <label for="list"><b>অনুদানের খাত</b></label>
-                <select id="payment_for" name="list">
-                  <option value="">----- Select ----</option>
-                  <option value="HD">ছাত্র কল্যাণ তহবিল</option>
-                  <option value="MF">মাদ্রাসার উন্নয়ন প্রকল্প</option>
-                  <option value="SD">লিল্লাহ বোডিং</option>
-                </select> 
 
-                <label for="amount"><b>পরিমান</b></label>
-                <input type="text" placeholder="Amount" name="amount" id="amt" >
-            
-                <label for="name"><b>দাতার নাম</b></label>
-                <input type="text" placeholder="Name" name="name" id="nm" >
+      <!------------------ section-4 Division Start  -------------------->    
+      <section class="division" id="division">         
+         <!--start division flip card part-->      
+          <div class="division-card-content reveal"> 
+                      <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="images/hifz.jpg" alt="Avatar" style="width:200px;height:250px;">
+                            <span style="color: red; font-size: 1.2em;"> মকতব বিভাগ</span>
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>মকতব <br>বিভাগ</h1> 
+                            <p>মকতব বিভাগে নুরানী পদ্ধতির পাঠদানের অনুসরণ করা হয়। তবে জেনারেল বিষয়ে বেফাকুল মাদারিসিল আরাবিয়ার (বাংলাদেশ) পাঠ্যবই পড়ানো হয়। 
+                              এ বিভাগে সর্বনিম্ন ৬-৭ বছর বয়সী ছাত্র-ছাত্রী ভর্তি করা হয়।</p>
+                            <button class="show-more" id="myModalDiv">Show more</button>
+                          </div>
+                          </div>
+                        </div>
 
-                <label for="email"><b>ফোন / ইমেইল</b></label>
-                <input type="text" placeholder="Phone or Email" name="email" id="email" >                
-                           
-                <hr>
-                <button type="submit" class="donate-btn">Submit</button>
-              </div>              
-            </form>
-          </div>
-          <!--
-          <div class="column col-left">
-            <div class="content-title">
-              Donation
-            </div>
-            <p class="paragraph-text">Donation related content write here</p>
-          </div>
-          <div class="column col-right">
-            <div class="content-title">
-              Please Fill all necessary field              
-            </div>
-            <!--Donation form--
-           <div class="row">
-            <div class="donation-form">
-                <div class="input-box">
-                <!--  <label for="payment_for">Payment For</label><br>--
-                  <select id="payment_for">
-                    <option value="">----- Select ----</option>
-                    <option value="HD">Hadia</option>
-                    <option value="MF">Madrasha Fund</option>
-                    <option value="SD">Student Development</option>
-                  </select>
-                </div>
-                <div class="input-box">
-                <!--  <label for="amount">Amount</label><br> --
-                  <input type="number" name="amount" value="" placeholder="Amount">                  
-                </div>
-                <div class="input-box">
-                 <!-- <label for="uname">Name</label><br> --
-                  <input type="text" name="uname" value="" placeholder="Name">                  
-                </div>
-                <div class="input-box">
-                <!--  <label for="phone">Phone / Email</label><br> --
-                  <input type="text" name="phone" value="" placeholder="Phone / Email">
-                </div>
-                <div class="input-box">
-                 <!-- <label for="comment">Comment</label><br>--
-                  <textarea name="comment" rows="4" placeholder="Comment"></textarea>
-                </div>
-                <div class="input-box">
-                  <input type="submit" class="send-btn" name="" value="Send">
-                </div>
+                        <div class="flip-card reveal">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/kitab.jpg" alt="Avatar" style="width:200px;height:250px;">
+                              <span style="color: red; font-size: 1.2em;"> কিতাব বিভাগ</span>
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>কিতাব <br>বিভাগ</h1> <br>
+                              <p>এ বিভাগ মোট ৫টি স্তরে বিভক্ত : <br>১. আলমারহাতুল ইবতিদাইয়্যাহ <br>২. আলমারহাতুল মুতাওয়াসসিতা <br>৩. আলমারহাতুস সানাবিয়া 
+                                <br>৪. আলমারহালাতুল 'আলিয়া <br>৫. আলমারহালাতুল আলামিয়া</p> 
+                                <button class="show-more" id="myModalDiv">Show more</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card reveal">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/hifz-2.jpg" alt="Avatar" style="width:200px;height:250px;">
+                              <span style="color: red; font-size: 1.2em;"> হিফয বিভাগ</span>
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>হিফয বিভাগ</h1> 
+                              <p>হিফয বিভাগের শিক্ষার্থীরা নাযেরা সমাপনীসহ মোট ৪ বছরে হিফয সম্পন্নের পাশাপাশি জেনারেল বিষয়ে ৪র্থ শ্রেণি শেষ করবে এবং ‘বেফাকুল মাদারিসিল আরাবিয়া বাংলাদেশের’ অধীনে হিফয পরীক্ষা দিবে। 
+                                হিফযের জন্য বর্ণিত সিলেবাস বৎসর কৈন্দ্রিক নয়; বরং মেধার উপর নির্ভরশীল। তবে এ বিভাগের সর্বোচ্চ মেয়াদ ৪ বছর।</p> 
+                                <button class="show-more" id="myModalDiv">Show more</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card reveal">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/norani.jpg" alt="Avatar" style="width:200px;height:250px;">
+                              <span style="color: red; font-size: 1.2em;"> রওযাতুস সাহবান</span>
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>রওযাতুস <br> সাহবান</h1> 
+                              <p>শিশুদের জন্য মাদরাসার তা’লীমী সময়সূচি (সকাল ৮.০০টা থেকে রাত ৮.০০টা পর্যন্ত) পরিপূর্ণভাবে রক্ষা করা কঠিন হয়ে পড়ে। 
+                                তাই ৫ বছর থেকে ৬ বছরের শিক্ষার্থীদের জন্য মকতব বিভাগে ‘রওযাতুস সাহবান’ নামে একটি শাখা চালু করা হয়েছে।</p> 
+                                <button class="show-more" id="myModalDiv">Show more</button>
+                            </div>
+                          </div>
+                        </div>     
+
+                      <div class="flip-card reveal">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                            <img src="images/hifz.jpg" alt="Avatar" style="width:200px;height:250px;">
+                            <span style="color: red; font-size: 1.2em;"> মকতব বিভাগ</span>
+                          </div>
+                          <div class="flip-card-back">
+                            <h1>মকতব <br>বিভাগ</h1> 
+                            <p>মকতব বিভাগে নুরানী পদ্ধতির পাঠদানের অনুসরণ করা হয়। তবে জেনারেল বিষয়ে বেফাকুল মাদারিসিল আরাবিয়ার (বাংলাদেশ) পাঠ্যবই পড়ানো হয়। 
+                              এ বিভাগে সর্বনিম্ন ৬-৭ বছর বয়সী ছাত্র-ছাত্রী ভর্তি করা হয়।</p>
+                            <button class="show-more" id="myModalDiv">Show more</button>
+                          </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card reveal">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/kitab.jpg" alt="Avatar" style="width:200px;height:250px;">
+                              <span style="color: red; font-size: 1.2em;"> কিতাব বিভাগ</span>
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>কিতাব <br>বিভাগ</h1> <br>
+                              <p>এ বিভাগ মোট ৫টি স্তরে বিভক্ত : <br>১. আলমারহাতুল ইবতিদাইয়্যাহ <br>২. আলমারহাতুল মুতাওয়াসসিতা <br>৩. আলমারহাতুস সানাবিয়া 
+                                <br>৪. আলমারহালাতুল 'আলিয়া <br>৫. আলমারহালাতুল আলামিয়া</p> 
+                                <button class="show-more" id="myModalDiv">Show more</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card reveal">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/hifz-2.jpg" alt="Avatar" style="width:200px;height:250px;">
+                              <span style="color: red; font-size: 1.2em;"> হিফয বিভাগ</span>
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>হিফয বিভাগ</h1> 
+                              <p>হিফয বিভাগের শিক্ষার্থীরা নাযেরা সমাপনীসহ মোট ৪ বছরে হিফয সম্পন্নের পাশাপাশি জেনারেল বিষয়ে ৪র্থ শ্রেণি শেষ করবে এবং ‘বেফাকুল মাদারিসিল আরাবিয়া বাংলাদেশের’ অধীনে হিফয পরীক্ষা দিবে। 
+                                হিফযের জন্য বর্ণিত সিলেবাস বৎসর কৈন্দ্রিক নয়; বরং মেধার উপর নির্ভরশীল। তবে এ বিভাগের সর্বোচ্চ মেয়াদ ৪ বছর।</p> 
+                                <button class="show-more" id="myModalDiv">Show more</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="flip-card reveal">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/norani.jpg" alt="Avatar" style="width:200px;height:250px;">
+                              <span style="color: red; font-size: 1.2em;"> রওযাতুস সাহবান</span>
+                            </div>
+                            <div class="flip-card-back">
+                              <h1>রওযাতুস <br> সাহবান</h1> 
+                              <p>শিশুদের জন্য মাদরাসার তা’লীমী সময়সূচি (সকাল ৮.০০টা থেকে রাত ৮.০০টা পর্যন্ত) পরিপূর্ণভাবে রক্ষা করা কঠিন হয়ে পড়ে। 
+                                তাই ৫ বছর থেকে ৬ বছরের শিক্ষার্থীদের জন্য মকতব বিভাগে ‘রওযাতুস সাহবান’ নামে একটি শাখা চালু করা হয়েছে।</p> 
+                                <button class="show-more" id="myModalDiv">Show more</button>
+                            </div>
+                          </div>
+                        </div>             
+          </div> <!--end division flip card part-->
+          <!--start division youtube part-->  
+          <div class="division-youtube reveal">
+              <div class="youtube-content reveal">
+                <p> Sura Yasin</p>
+                <iframe class="res-iframe" src="https://www.youtube.com/embed/VLyktW15HXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
               </div>
-            </div>
-          </div>   
-        -->        
-        </div>
+              <div class="youtube-content reveal">
+                <iframe class="res-iframe" src="https://www.youtube.com/embed/JnX7Oc8LqD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+                <p> Sura Ar-Rahman</p>
+              </div>
+          </div> <!--end division youturb part-->
+      </section>      
+      <!-- ################ section-4 Division End #################### -->
+
+      <!------------------ section-4 Donation Start  -------------------->
+      <section class="donation" id="donation">                            
+                <div class="title">
+                </div>
+                <div class="donation-content reveal">
+                    <div class="donation-logo">
+                      <img src="images/unity.jpg" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="donation-form">
+                      <div class="donation-heading">
+                        <p style="color: yellow;">Note: To Donate us, Please follow the following step.</p>
+                        <p>Send money from the following number & then click Donation Feedback button.</p>
+                      </div>
+                      <div class="donation-money-icon">
+                        <img src="images/bkash.jpg" alt="bKash" width="70px" height="50px">
+                        <img src="images/dbbl.jpg" alt="Rokact" width="70px" height="50px">
+                        <img src="images/nogod.png" alt="Nagod" width="70px" height="50px">
+                        <br><br><p>bKash, Rokect, Nagod No  <br> 01861394156</p>                     
+                        <img src="images/bank.png" alt="Bank" width="70px" height="50px">
+                        <p>Bank Account : 1234567890</p>
+                      </div>
+                      <div class="donation-money-icon">
+                        <button class="btn-modal" onclick="document.getElementById('modal-win').style.display='block'">Donation Feedback</button>
+                      </div>
+                        <div class="modal-win" id="modal-win">
+                          <p><h3 style="color: yellow;"> Donation Feedback Form</h3></p>
+                          <div class="form">
+                          <label for="donate-for" style="width: 30%;">Donate For</label>
+                          <select style="width: 60%;" name="donate-for" placeholder="Please Select Donate For" id="donate-for">
+                            <option value="">----- Select ----</option>
+                            <option value="HD">Hadia</option>
+                            <option value="MF">Madrasha Fund</option>
+                            <option value="SD">Student Development</option>
+                          </select>
+                          <label for="phone-no"  style="width: 30%;">Phone / Email</label>
+                          <input type="text"  style="width: 60%;" name="phone-no" placeholder="Please give your phone or email no">
+                          
+                          <label for="amt"  style="width: 30%;">Amount</label>
+                          <input type="text"  style="width: 60%;" name="amt" placeholder="Amount of Donation">
+                          
+                          <label for="tx-no"  style="width: 30%;">Transction No</label>
+                          <input type="text"  style="width: 60%;" name="tx-no" placeholder="Please type your Transaction no">
+
+                          <textarea style="width: 100%;" name="comment" rows="4" placeholder="Comment"></textarea>
+                        </div>
+                        <div class="form-btn" style="text-align: right;">
+                          <button class="btn-modal" onclick="document.getElementById('modal-win').style.display='none'">Close</button>
+                          <button class="btn-modal" onclick="document.getElementById('modal-win').style.display='none'">Send</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
       </section>
-      <!-- ################ section-6 Service End #################### -->
-      <!------------------ section-7 Contact Start  -------------------->
-      <section class="contact" id="contact">
-        <div class="title reveal">
-          <h2 class="section-title"> যোগাযোগ </h2>
-        </div>
+
+      <!-- ################ section-4 Donation End #################### -->
+
+       <!------------------ section-7 Contact Start  -------------------->
+       <section class="contact" id="contact">
+        <!--<div class="title reveal">
+          <h2 class="section-title"> Contact </h2>
+        </div>-->
         <div class="content">
           <!--Contact number-->
           <div class="row reveal">
@@ -444,7 +378,7 @@
               </div>
               <div class="info">
                 <h3 class="">Address</h3>
-                <span>৬২১ পশ্চিম নাখালপাড়া, তেজগাঁও, ঢাকা-১২১৫</span>
+                <span>Address, City, Country</span>
               </div>
             </div>
              <!--Phone-->
@@ -452,8 +386,8 @@
               <div class="contact-icon">
                 <i class="fas fa-phone"></i>
               </div>
-              <div class="ফোন">
-                <h3 class="">Address</h3>
+              <div class="info">
+                <h3 class="">Phone</h3>
                 <span>+880170000000</span>
               </div>
             </div>
@@ -463,7 +397,7 @@
                 <i class="fas fa-envelope"></i>
               </div>
               <div class="info">
-                <h3 class="">ইমেইল</h3>
+                <h3 class="">Email</h3>
                 <span>example@email.com</span>
               </div>
             </div>
@@ -480,10 +414,12 @@
           </div>
         </div>
       </section>
-      <!-- ################ section-7 Contact End #################### -->
-      <!------------------ section-8 Service Start  -------------------->
-
-      <!-- ################ section-8 Service End #################### -->
+      <section class="gmap reveal">
+        <div class="map reveal">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.3702297224695!2d90.39259261429731!3d23.769827093952312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c767474ac025%3A0xf61d4739d9d7729d!2s621%20W%20Nakhalpara%20Rd%2C%20Dhaka%201215!5e0!3m2!1sen!2sbd!4v1633267005379!5m2!1sen!2sbd" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
+      
     </main>
 
     <footer class="footer">
@@ -495,9 +431,9 @@
             </p>
         </div>
         <div class="media-icons">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
         <div class="about-us">
           <p class="madrasha-info"> Madrasha ti biggan sommotho</p>
@@ -511,6 +447,7 @@
     </footer>
 
 	  <script src="script.js" charset="utf-8"> </script>	
+    <script src="modal-.js" charset="utf-8"> </script>	
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
   </body>
